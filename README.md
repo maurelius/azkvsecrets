@@ -1,6 +1,6 @@
 # azkvsecrets
 
-Script for retrieving secrets from Azure Key Vault
+Script for retrieving secrets from Azure Key Vault. I use this so I don't have to store secrets in plaintext for automating Tenable.io things
 
 ## Usage
 
