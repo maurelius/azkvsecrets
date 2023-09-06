@@ -1,4 +1,3 @@
-#!/usr/bin/python
 """ az_kv_secrets.py: Retrieves secrets from a defined Azure Key Vault"""
 """ Reference Documentation: https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python?tabs=azure-cli """
 """ Azure Identity / DefaultAzureCredential Documentation: https://learn.microsoft.com/en-us/azure/developer/python/sdk/authentication-overview"""
