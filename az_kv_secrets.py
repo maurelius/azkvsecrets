@@ -2,7 +2,6 @@
 """ Reference Documentation: https://learn.microsoft.com/en-us/azure/key-vault/secrets/quick-create-python?tabs=azure-cli """
 """ Azure Identity / DefaultAzureCredential Documentation: https://learn.microsoft.com/en-us/azure/developer/python/sdk/authentication-overview"""
 """ Currently must use Azure CLI for credentials to pass correctly """
-""" Don't forget to set az subscription context using AZ_SUBSCRIPTION variable """
 
 __name__ = "az_kv_secrets.py"
 
