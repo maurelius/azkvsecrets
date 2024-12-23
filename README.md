@@ -4,16 +4,18 @@ Script for retrieving secrets from Azure Key Vault. I use this so I don't have t
 
 ## Usage
 
-I typically use this to retrieve API access keys from a specific KV. Add the script to your `$PATH` or keep it in the local working directory.  
+I typically use this to retrieve API access keys from a specific KV. Create a subdirectory named **Azure** and drop the files in there.
+I'll figure out how to make it work right from `git clone` soon.
   
 **Azure CLI is required**. You need to be signed into the correct user context that has access to the KeyVault in Azure.
     - Run `az login`
 
 ```python
-import az_kv_secrets
+from Azure import az_kv_secrets
 from tenable.io import TenableIO
-# Define keys to auth to API
-accessKey, secretKey = azkvsecrets.get_keys()
+# Grab the three keys that are retrieved via get_keys()
+# linkingKey is used for new scanner installation
+accessKey, secretKey, linkingKey = azkvsecrets.get_keys()
 # Bootstrap API connection
 io = TenableIO(access_key=accessKey, secret_key=secretKey)
 ```
