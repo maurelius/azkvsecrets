@@ -11,11 +11,11 @@ I'll figure out how to make it work right from `git clone` soon.
     - Run `az login`
 
 ```python
-from Azure import az_kv_secrets
+from Azure import az_kv_secrets as azkv
 from tenable.io import TenableIO
 # Grab the three keys that are retrieved via get_keys()
 # linkingKey is used for new scanner installation
-accessKey, secretKey, linkingKey = azkvsecrets.get_keys()
+accessKey, secretKey, linkingKey = azkv.get_keys()
 # Bootstrap API connection
 io = TenableIO(access_key=accessKey, secret_key=secretKey)
 ```
