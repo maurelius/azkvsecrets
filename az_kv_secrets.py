@@ -3,8 +3,6 @@
 """ Azure Identity / DefaultAzureCredential Documentation: https://learn.microsoft.com/en-us/azure/developer/python/sdk/authentication-overview """
 """ Currently must use Azure CLI for credentials to pass correctly """
 
-__name__ = "az_kv_secrets.py"
-
 import os
 from azure.keyvault.secrets import SecretClient
 from azure.identity import DefaultAzureCredential
