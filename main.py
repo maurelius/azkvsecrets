@@ -40,12 +40,14 @@ def main():
         # io = TenableIO(access_key=accessKey, secret_key=secretKey)
         # print("Tenable.io client initialized successfully.")
 
-        # For demonstration purposes, we'll just print the keys
-        print("\n--- Retrieved Secrets ---")
-        print(f"Access Key: {accessKey}")
-        print(f"Secret Key: {secretKey}")
-        print(f"Linking Key: {linkingKey}")
-        print("-------------------------")
+        # For demonstration purposes, we'll confirm the secrets were retrieved.
+        print("\n--- Secret Retrieval Confirmation ---")
+        if all([accessKey, secretKey, linkingKey]):
+            print("All secrets were retrieved successfully and are available in memory.")
+            print("For security reasons, their values will not be printed to the console.")
+        else:
+            print("Warning: One or more secrets could not be retrieved.")
+        print("------------------------------------")
 
     except Exception as e:
         print(f"\nAn error occurred: {e}")
