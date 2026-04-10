@@ -1,0 +1,19 @@
+[project]
+name = "azure-keyvault-utils"
+version = "0.1.0"
+description = "Shared Azure helper package for scripts, including Key Vault secret retrieval."
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+  "azure-identity>=1.14.0",
+  "azure-keyvault-secrets>=4.7.0",
+  "azure-mgmt-subscription>=3.1.1"
+]
+
+[tool.setuptools]
+packages = ["Azure"]
+include-package-data = true
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"

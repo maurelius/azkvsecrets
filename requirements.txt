@@ -1,0 +1,11 @@
+# Azure Key Vault Secrets Helper
+# Core Azure SDK dependencies for Key Vault operations and authentication
+
+# Azure Identity - Provides DefaultAzureCredential for authentication
+azure-identity>=1.13.0
+
+# Azure Key Vault Secrets - Client library for managing Key Vault secrets
+azure-keyvault-secrets>=4.4.0
+
+# Azure Subscription Management - For subscription validation
+azure-mgmt-subscription>=3.1.0
